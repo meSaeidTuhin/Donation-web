@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <img src="images/istockphoto-477437511-612x612.jpg" alt="Featured" class="featured-image">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #007bff;
+            color: white;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+        .donate-btn {
+            background: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .featured-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+        .info-image {
+            flex: 1;
+            background: url('info-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .info-text {
+            flex: 1;
+            padding: 20px;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        .category {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            border-radius: 8px;
+        }
+        .latest-causes {
+            padding: 50px;
+            text-align: center;
+        }
+        .cause-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .cause {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .cause img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .gallery {
+            padding: 50px;
+            background: #eee;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .info, .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            .category {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Donate</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Causes</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="donate-btn">Donate</a>
+    </header>
+    
+    <img src="istockphoto-477437511-612x612.jpg" alt="Featured" class="featured-image">
+    
+    <section class="hero">
+        <div>
+            <h1>Give Hope, Save Lives</h1>
+            <p>Join us in making a difference in the world.</p>
+        </div>
+    </section>
+    
+    <section class="info">
+        <div class="info-image"></div>
+        <div class="info-text">
+            <h2>Transforming Good Intentions into Good Actions</h2>
+            <p>Our mission is to create a better future for everyone.</p>
+        </div>
+    </section>
+    
+    <section class="categories">
+        <div class="category"><h3>Education</h3></div>
+        <div class="category"><h3>Clean Water</h3></div>
+        <div class="category"><h3>Health Care</h3></div>
+        <div class="category"><h3>Local Communities</h3></div>
+    </section>
+    
+    <section class="latest-causes">
+        <h2>Latest Causes</h2>
+        <div class="cause-cards">
+            <div class="cause">
+                <img src="cause1.jpg" alt="Clean Water">
+                <h3>Clean Water for All</h3>
+                <p>Goal: $5000</p>
+                <a href="#" class="donate-btn">Donate</a>
+            </div>
+            <div class="cause">
+                <img src="cause2.jpg" alt="Improve Education">
+                <h3>Improve Education</h3>
+                <p>Goal: $8000</p>
+                <a href="#" class="donate-btn">Donate</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery">
+        <h2>Our Gallery</h2>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Donation Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
