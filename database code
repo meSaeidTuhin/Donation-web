@@ -1,0 +1,26 @@
+CREATE DATABASE hopeharbor_db;
+USE hopeharbor_db;
+
+CREATE TABLE donors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20),
+    country VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE organizations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    org_name VARCHAR(255) NOT NULL,
+    org_id VARCHAR(100) UNIQUE NOT NULL,
+    org_type VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    org_description TEXT NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    payment_gateway VARCHAR(255) NOT NULL,
+    org_website VARCHAR(255),
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
